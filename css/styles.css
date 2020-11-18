@@ -109,10 +109,13 @@ p {
 
 .link {
   text-decoration: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 .link:hover,
 .link:focus {
   color: var(--accent);
+  transition;
 }
 
 img {
@@ -199,22 +202,19 @@ img {
 .header-link:hover .header-svg,
 .header-link:focus .header-svg {
   fill: var(--accent);
-  transition;
 }
 
 .header-link {
   display: flex;
   vertical-align: middle;
   align-items: center;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
 .header-svg {
   fill: var(--second-text-cl);
   padding-right: 10px;
   height: 16px;
   width: 26.14px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail-link {
@@ -498,19 +498,15 @@ img {
   height: 44px;
   background-color: var(--white);
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icons-link:hover,
 .social-icons-link:focus {
   background-color: var(--accent);
-  transition;
 }
 
 .social-icons-link:hover .social-icons-svg,
 .social-icons-link:focus .social-icons-svg {
-  fill: var(--white);
-  transition;
-}
+  fill: var(--white);}
 
 .social-icons-svg {
   width: 20px;
@@ -536,23 +532,19 @@ img {
   border: 1px solid var(--icon-gray);
   box-sizing: border-box;
   border-radius: 4px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover .client-icons-svg,
 .clients-link:focus .client-icons-svg {
   fill: var(--accent);
-  transition;
 }
 
 .clients-link:hover,
 .clients-link:focus {
   border-color: var(--accent);
-  transition;
 }
 .client-icons-svg {
   fill: var(--icon-gray);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*Портфолио*/
 .portfolio-list {
@@ -619,7 +611,7 @@ img {
   text-decoration: none;
   display: block;
   border: currentColor;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .work-card:nth-child(3n) {
   margin-right: 0;
@@ -627,10 +619,11 @@ img {
 .cards-item {
   flex-basis: calc(100% / 3 - 30px);
   background-color: var(--white);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cards-item .work-card:hover,
 .cards-item .work-card:focus {
+  transition;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -684,7 +677,6 @@ address {
 .link-footer {
   line-height: 1.714;
   letter-spacing: 0.03em;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-footer {
@@ -716,25 +708,21 @@ address {
   height: 44px;
   background-color: var(--icon-dark);
   border-radius: 50%;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icons-link:hover,
 .footer-icons-link:focus {
   background-color: var(--accent);
-  transition;
 }
 
 .footer-icons-link:hover .footer-icons-svg,
 .footer-icons-link:focus .footer-icons-svg {
   fill: var(--white);
-  transition;
 }
 .footer-icons-svg {
   width: 20px;
   height: 20px;
   fill: var(--white);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
